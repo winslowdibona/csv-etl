@@ -1,0 +1,12 @@
+rules:
+  -
+    target: OrderDate
+    type: Calculation
+    input_type: Integer
+    output_type: Date
+    source:
+      - Day
+      - Month
+      - Year
+    operations:
+      - 'datetime(s[2], s[1], s[0])'

@@ -1,0 +1,8 @@
+pyyaml
+wheel
+setuptools
+twine
+pdoc3
+pytest-cov
+Click
+flake8

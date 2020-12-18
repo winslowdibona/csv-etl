@@ -1,0 +1,10 @@
+venv/
+.pytest_cache/
+csv_etl.egg-info/
+build/
+*/__pycache__/
+tests/resources/test_outfile.csv
+cov_html/
+html/
+.coverage
+.eggs/

@@ -1,0 +1,12 @@
+rules:
+  -
+    target: Test
+    type: Calculation
+    input_type: Decimal
+    output_type: Decimal
+    source: Count
+    operations:
+      - "s / 2"
+      - "s + 5"
+
+# if 20 was the value extracted, the end result would be 15. 

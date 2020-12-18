@@ -1,0 +1,7 @@
+rules:
+  -
+    target: Unit
+    type: Static
+    input_type: String
+    output_type: String
+    source: kg

@@ -1,0 +1,8 @@
+rules:
+  -
+    target: TestTarget
+    type: Calculation
+    input_type: String
+    output_type: String
+    source: Test Source
+    operations: []

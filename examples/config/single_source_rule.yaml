@@ -1,0 +1,7 @@
+rules:
+  -
+    target: ProductId
+    type: Calculation
+    input_type: String
+    output_type: String
+    source: Product Number

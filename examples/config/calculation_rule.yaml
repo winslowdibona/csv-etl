@@ -1,0 +1,11 @@
+rules:
+  -
+    target: Quantity ^2
+    type: Calculation
+    input_type: Decimal
+    output_type: Decimal
+    source:
+      - Count
+      - Count
+    operations:
+      - 's[0] * s[1]'

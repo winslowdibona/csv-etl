@@ -1,0 +1,44 @@
+rules:
+  -
+    target: OrderId
+    type: Calculation
+    input_type: Integer
+    output_type: Integer
+    source: Order Number
+  -
+    target: OrderDate
+    type: Calculation
+    input_type: Integer
+    output_type: Date
+    source:
+      - Day
+      - Month
+      - Year
+    operations:
+      - 'datetime(s[2], s[1], s[0])'
+  -
+    target: ProductId
+    type: Calculation
+    input_type: String
+    output_type: String
+    source: Product Number
+  -
+    target: ProductName
+    type: Calculation
+    input_type: String
+    output_type: String
+    source: Product Name
+    operations:
+      - 's.title()'
+  -
+    target: Quantity
+    type: Calculation
+    input_type: Decimal
+    output_type: Decimal
+    source: Count
+  -
+    target: Unit
+    type: Static
+    input_type: String
+    output_type: String
+    source: kg
